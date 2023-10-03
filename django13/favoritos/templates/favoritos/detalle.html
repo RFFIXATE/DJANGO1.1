@@ -1,0 +1,25 @@
+{% extends 'base_bs5.html' %}
+
+{% block container %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>detalle favorito</h1>
+            <p><a href="{% url 'favoritos:index' %}">Atras</a></p>
+
+            <p>{{ object.nombre }}</p>
+            <p><a href="{{ object.url }}">{{ object.url }}</a></p>
+        </div>
+    </div>
+</div>
+
+  
+{% endblock container %}
+
+
+
+
+
+
+
+
